@@ -22,7 +22,6 @@ local keepNames = {
 	["Detected_ModuleScripts"]= true,
 }
 
-
 local seen = {}
 
 local function fullPath(obj)
