@@ -44,7 +44,7 @@ local function addPulsingHighlight(part)
 	h.FillTransparency = 0.7
 	h.OutlineTransparency = 0.5
 	h.Parent = part
-	h.depthMode = Enum.HighlightDepthMode.AlwaysOnTop
+	h.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
 
 	local tweenInfo = TweenInfo.new(0.18, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1, true)
 	TweenService:Create(h, tweenInfo, {FillTransparency = 1, OutlineTransparency = 1}):Play()
