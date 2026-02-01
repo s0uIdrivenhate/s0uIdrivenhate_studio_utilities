@@ -34,8 +34,16 @@ local function fullPath(obj)
 	return table.concat(t, ".")
 end
 
+local function forceVisible(part)
+	if part:IsA("BasePart") then
+		part.Transparency = 0
+	end
+end
+
 local function addPulsingHighlight(part)
 	if part:FindFirstChild("DetectedHighlight") then return end
+	forceVisible(part)
+
 	local h = Instance.new("Highlight")
 	h.Name = "DetectedHighlight"
 	h.Adornee = part
@@ -43,8 +51,8 @@ local function addPulsingHighlight(part)
 	h.OutlineColor = Color3.fromRGB(0,34,255)
 	h.FillTransparency = 0.7
 	h.OutlineTransparency = 0.5
-	h.Parent = part
 	h.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+	h.Parent = part
 
 	local tweenInfo = TweenInfo.new(0.18, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1, true)
 	TweenService:Create(h, tweenInfo, {FillTransparency = 1, OutlineTransparency = 1}):Play()
