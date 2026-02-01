@@ -8,7 +8,7 @@ Everything here is **open-source** under the MIT License. Feel free to use or ch
 
 | Utility | Type | What it does | Latest |
 |---------|------|--------------|--------|
-| **ScriptDetector** | Script | Scans the workspace to find scripts. Once found, it will disable them and put them in specific folders, useful for finding viruses or finding hidden scripts! | [V1.0](ScriptDetector/release/ScriptDetector_v1.0.lua) |
+| **ScriptDetector** | Script | Scans the workspace to find scripts. Once found, it will disable them and put them in specific folders, useful for finding viruses or finding hidden scripts! | [V1.0](StudioUtilities/Scripts/ScriptDetector/Release/ScriptDetector_v1.0.lua) |
 
 ## License
 MIT © 2026 s0uIdrivenhate  
